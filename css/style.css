@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+a:link {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #990099;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* -- 画像と画像リンク -- */
+img,
+img a,
+img a:hover {
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* ---------------------------------------- フォントスタイル フォントサイズ */
+
+body {
+  font-size: 80%;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------------------------------------- レイアウトに関する指定 */
+
+#wrapper {
+  text-align: left;
+  margin: 0 auto;
+  width: 830px;
+  background: #d9e6df;
+}
+
+#header {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 2em;
+  background: url('sunset.jpg') no-repeat 0 0;
+}
+
+#contents {
+  float: right;
+  width: 570px;
+  padding-right: 20px;
+}
+
+#sidebar {
+  float: left;
+  width: 200px;
+  padding-left: 20px;
+}
+
+#footer {
+  clear: both;
+  background: url(img/bg-footer.jpg) no-repeat 0 100%;
+}
+
+/* ---------------------------------------- #header内の指定 */
+
+/* -- 見出しレベル1 -- */
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* -- 企業名 ショップ名 サイト名 -- */
+.logo {
+  font-size: 120%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+/* -- 概要 -- */
+.description {
+  font-size: 90%;
+  position: absolute;
+  top: 0.5em;
+  right: 20px;
+}
+
+/* -- グローバルナビゲーション -- */
+
+#header #globalnavi {
+  list-style-type: none;
+  width: 800px;
+  height: 32px;
+  position: absolute;
+  top: 70px;
+  left: 15px;
+  overflow: hidden;
+}
+
+#header #globalnavi li {
+  text-align: center;
+  width: 155px;
+  height: 30px;
+  float: left;
+  margin: 0;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333; 
+  background: url(img/bg-globalnavi.jpg) no-repeat -160px 0;
+}
+
+#header #globalnavi li a {
+  text-decoration: none;
+  display: block;
+  width: 160px;
+  padding: 10px 0;
+  background: url(img/bg-globalnavi.jpg) no-repeat 0 0;
+}
+
+#header #globalnavi li a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+}
+
+/* -- ご利用案内等のリンク部分 -- */
+
+#header ul {
+  list-style-type: none;
+  position: absolute;
+  top: 2em;
+  right: 20px;
+}
+
+#header li {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+/* ---------------------------------------- #contents内の指定 */
+
+/* -- 見出し -- */
+h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding:  1em 0 1em 20px;
+}
+
+h3,h4,h5,h6 {
+  margin-top: 2em;
+  background: url(img/bg-h.jpg) no-repeat 0 50%;
+  clear: both;
+}
+
+h2 { background: url(img/bg-h2.jpg) no-repeat 0 50%; }
+
+/* -- 文字 -- */
+#contents p {
+  line-height: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+/* -- パン屑リスト -- */
+#contents .topic-path { margin-bottom: 0.5em; }
+
+/* -- ページ先頭へのリンク -- */
+#contents .page-top {
+  line-height: normal;
+  text-align: right;
+  margin-bottom: 2em;
+  clear: both;
+}
+
+.clear { clear: both; }
+
+/* ---------------------------------------- #sidebar内の指定 */
+
+/* -- サイドバー内の文字 -- */
+#sidebar p { margin-bottom: 2em; }
+
+/* -- サイドバー内のタイトル -- */
+#sidebar .sidetitle {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0.5em 0;
+  color: #006699;
+  background-color: #ffffff;
+  border-bottom: 1px solid #006699;
+}
+
+/* -- ローカルナビゲーション -- */
+.localnavi {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  display: block;
+  width: 190px;
+  padding: 0.5em 5px;
+  background: url(img/bg-localnavi.jpg) no-repeat 0 100%;
+  border-bottom: 1px solid #cccccc;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  background: url(img/bg-localnavi.jpg) no-repeat -200px 100%;
+}
+
+/* -- サイドバー内のお知らせ情報 -- */
+#sidebar dl {
+  width: 200px;
+  margin-bottom: 2em;
+}
+
+#sidebar dt {
+  text-align: center;
+  padding: 0.5em 0;
+  color: #ffffff;
+  background-color: #0066ff;
+}
+
+#sidebar dd {
+  line-height: 1.6em;
+  margin-bottom: 2em;
+  padding: 0.5em 9px;
+  border: 1px solid #0066ff;
+}
+
+/* ---------------------------------------- #footer内の指定 */
+
+/* -- コピーライト部分 -- */
+address {
+  text-align: center;
+  font-style: normal;
+  padding-bottom: 0.5em;
+}
+
+/* -- 会社名 住所など -- */
+#footer dl {
+  font-size: 90%;
+  text-align: right;
+  padding: 3em 20px 0.5em;
+}
+
+#footer dt {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#footer dd { margin: 0; }
+
+/* -- 会社概要 特定商取引法リンク -- */
+#footer ul {
+  list-style-type: none;
+  padding: 0 0 1em 20px;
+}
+
+#footer li {
+  display: inline;
+  padding-left:1em;
+}
+
+/* 以下 CSSデザインサンプルクレジット部分 */
+#cds { display: none; }
+
+/* ---------------------------------------- トップページ */
+
+/* -- お薦め商品 -- */
+.ul-topinfo-list01 {
+  list-style-type: none;
+  width: 560px;
+  padding: 0 0 1em 10px;
+}
+
+.ul-topinfo-list01 li {
+  float: left;
+  width: 180px;
+  margin-right: 5px;
+}
+
+/* -- 新着商品 -- */
+.dl-topinfo-list02 dt {
+  margin-bottom: 0.5em;
+  color: #006699;
+  background-color: #ffffff;
+}
+
+.dl-topinfo-list02 .imgbox {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+/* -- お知らせ / 更新情報 -- */
+
+.dl-topinfo-list03 { margin: 0 0 1em; }
+
+.dl-topinfo-list03 dt {
+  margin-bottom: 0.5em;
+  color: #006699;
+  background-color: #ffffff;
+}
+
+.dl-topinfo-list03 ul {
+  list-style-type: none;
+  margin: 1em 0;
+}
+
+.dl-topinfo-list03 li {
+  line-height: 1.6em;
+  padding: 10px 0 9px;
+  border-bottom: 1px solid #666666;
+}
+
+/* ---------------------------------------- 会社概要ページ */
+
+.table-about {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.table-about th {
+  font-weight: normal;
+  width: 160px;
+  padding: 0.5em 10px;
+  background-color: #6699cc;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.table-about td {
+  width: 380px;
+  padding: 0.5em 0 0.5em 10px;
+}
+
+/* ---------------------------------------- 個人情報ページ */
+.ol-privacypolicy { margin: 2em 0 1em 30px; }
+
+.ol-privacypolicy li {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+}
+
+/* ---------------------------------------- フォーム */
+
+
+form dl { margin: 1em 0; }
+
+form dt { margin-bottom: 2px; }
+
+form dd { margin-bottom: 1em; }
+
+form span {
+  padding-left: 0.5em;
+  color: #ff0000;
+  background-color: #ffffff;
+}
+
+input { padding: 2px; }
+
+/* ---------------------------------------- 各商品ページの指定 */
+
+/* -- 商品カテゴリー -- */
+
+#contents .dl-list-01 {
+  width: 570px;
+  margin: 1em 0;
+}
+
+#contents .dl-list-01 dt {
+  width: 200px; /* 幅調節 */
+  height: 300px; /* 高さ調節 */
+  float: left;
+  clear: left;
+}
+
+#contents .dl-list-01 dd {
+  width: 370px; /* 幅調節 */
+  height: 300px; /* 高さ調節 */
+  float: left;
+}
+
+/* -- 商品詳細分類 商品一覧 -- */
+
+#contents .ul-list-02 {
+  list-style-type: none;
+  width: 570px;
+  margin: 1em 0;
+}
+
+#contents .ul-list-02 li {
+  float: left;
+  width: 185px; /* 幅調節 */
+  margin-bottom: 4em;
+}
+
+#contents .ul-list-02 dl { height: 300px; } /* 高さ調節 */
+
+#contents .ul-list-02 dt { margin-bottom: 1em; }
+
+#contents .ul-list-02 dd { margin-bottom: 0.5em; }
+
+/* -- 個別商品ページ -- */
+
+#contents .dl-list-03 {
+  width: 570px;
+  margin: 1em 0;
+}
+
+#contents .dl-list-03 dt { margin-bottom: 1em; }
+
+#contents .dl-list-03 dd { margin-bottom: 1em; }
+
+ /* 画像を左寄せにする */
+.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+ /* 画像を右寄せにする */
+.right {
+  float: right;
+  margin: 0 0 2em 2em;
+}
